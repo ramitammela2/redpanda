@@ -1,0 +1,278 @@
+body
+{
+	margin: 0;
+	 font-family: Arial, Helvetica, sans-serif;
+	 background: #999;
+}
+
+h1
+{
+	margin: 0;
+	color:red;
+	text-align:center;
+}
+h2
+{
+	margin: 0;
+	color:orange;
+	text-align:center;
+}
+
+a	/* Link */
+{
+	color:blue;
+}
+
+p
+{
+	background:#666;
+	color:white;
+	padding: 10px;
+	text-align:center;
+	margin: 50px 0px 50px 0px;
+}
+
+header
+{
+	background: #999;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKQahY9MXADEdrVRanpocU3SHOpKc-swLK4YQyxA1YYiFRks5");
+	margin: 0;
+	padding: 15px 15px 0 15px;
+}
+header h1
+{
+	margin: 0;
+	display: inline;
+}
+
+
+.column 
+{
+  float: center;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+nav ul
+{
+	margin: 0px;
+	padding: 0 0 0 15px;
+	display: inline;
+}
+
+	nav ul li	/* Navigation Button  */
+	{
+		background:black;
+		color: white;
+		display: inline-block;
+		list-style-type: none;
+		padding: 5px 15px;	
+	}
+
+		nav ul li a	 /* Navigation Link */
+		{
+			background:black;
+			color: white;
+		}
+
+.row
+{
+	background:black;
+	color:white;
+}
+
+	.rowImage
+	{
+		color:white;
+	}
+
+	.rowButtons
+	{
+		text-align:center;
+		color:white;
+		margin: 0 300px    0 300px;
+		padding: 5px 5px 5px 5px;
+	}
+		
+		.row:after
+		{
+			clear: both;
+			content: " ";
+			display: table;
+		}
+
+
+
+
+.button 
+{
+    background-color: #666;
+    border: none;
+    border-radius: 12px;
+    color: orange;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.textBox
+{ 
+	background:#666;
+	color:white;
+	padding: 10px;
+	text-align: left;
+	margin: 0px 100px 0px 100px;
+	margin-top: 50px;
+}
+
+.videoBox
+{
+	float: center;
+	padding: 0px;
+	
+}
+.textBox2
+{ 
+	background:grey;
+	color:white;
+	padding: 10px;
+	text-align: left;
+	margin-top: 50px;
+	
+}
+
+	.textBoxHeaderBox
+	{
+		background:#999;
+		padding: 8px;
+	}
+
+		.textBoxHeader
+		{
+			background:black;
+			color:white;
+			border-radius: 100px;
+			padding: 2px;
+			text-align:left;
+		}
+
+.col
+{
+	background: #666;
+	border-radius: 5px;
+	color: white;
+	padding: 10px .5%;
+	float: left;
+	margin: .5%;
+	width: 31%;
+}
+
+.hText	/* Biggest Header */
+{
+	font-size: 32px;
+	font-style: bold;
+	color:orange;
+}
+.h2Text	/* Smaller Header */
+{
+	font-size: 20px;
+	font-style: bold;
+	color:white;
+}
+
+.aText	/* Biggest Header */
+{
+	font-size: 18px;
+	font-style: bold;
+	color:orange;
+}
+.bText	/* Smaller Header */
+{
+	font-size: 22px;
+	font-style: bold;
+	color:orange;
+}
+
+#myDIV {
+		display: block;
+}
+#myDIV2 {
+		display: none;
+}
+#myDIV3 {
+		display: none;
+}
+
+
+
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 2px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+	font-size: 18px;
+    margin-top: 1px; 
+    margin-bottom: 5px;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] 
+{
+    background-color: orange;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover 
+{
+    background-color: gray;
+}
+
+/* Add a background color and some padding around the form */
+.EmailContainer
+{
+	width: 50%;
+	margin-top: 50px;
+	margin
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin: auto;
+    width: 50%;
+    border: 5px solid black;
+    padding: 10px;
+} 
+
+
+
+
+
+
+footer
+{
+	text-align:center;
+	color: white;
+	margin-top: 100px;
+	padding: 40px;
+	
+	background:black;	/* if not image then black blackground */
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKQahY9MXADEdrVRanpocU3SHOpKc-swLK4YQyxA1YYiFRks5");
+}
