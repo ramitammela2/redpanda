@@ -3,62 +3,45 @@
 
 <head>
 	<title>Red Panda</title>
-
  	<link rel="stylesheet" href="main.css">
 	<link rel="icon" href="https://orig00.deviantart.net/a6cd/f/2013/216/5/0/red_panda_by_hungaryoak-d6gnp1a.png">
 		
-	<style>
-		* {
-			box-sizing: border-box;
-		}
+    
 
-		.column2
-		{
-			float: left;
-			width: 33.33%;
-			padding: 0px;
-		}
 
-		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 500px) 
-		{
-			.column2 
-			{
-				width: 100%;
-			}
-		}
-	</style>
 </head>
 
 <header>
-		<span class="hText">Red Panda</span>
-		<span class="h2Text">Ailurus fulgens</span><br><br>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="page2.html">History</a></li>
-				<li><a href="page3.html">Threats</a></li>
-				<li><a href="page4.html">Email</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div class="headerBox">
+	    <span class="hText">Red Panda</span>
+	    <span class="h2Text">Ailurus fulgens</span>
+    </div>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="page2.html">History</a></li>
+			<li><a href="page3.html">Threats</a></li>
+			<li><a href="page4.html">Email</a></li>
+		</ul>
+	</nav>
+</header>
 
 <body>
 	
 
-	<p><strong><marquee scrolldelay="120"><q id="info"></q></marquee></strong></p>
+	<p><strong><marquee scrolldelay="80"><q id="info"></q></marquee></strong></p>
 	
-	<div class="row">
+	<div class="rowImages">
 		<br> 
-			<div class="column2">
+			<div class="imgColumn">
 				<img src="http://r.ddmcdn.com/w_624/s_f/o_1/cx_0/cy_17/cw_624/ch_416/APL/uploads/2014/06/red-panda-07-625x350.jpg" style="width:100%">
 			</div>
 
-			<div class="column2">
+			<div class="imgColumn">
 				<img src="https://c1.staticflickr.com/3/2823/33125320863_6b71e9af9a_b.jpg" style="width:100%">
 			</div>
 
-			<div class="column2">
+			<div class="imgColumn">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Red_Panda_%2825193861686%29.jpg/800px-Red_Panda_%2825193861686%29.jpg" style="width:100%">
 			</div>
 		<br> 
@@ -100,24 +83,27 @@
 	</div>
 
 
-		<br> 
-		<br> 
-		
-		<h2>Pienempi otsikko</h2>
-		<p>Sisältö</p>
-		<div class="textBox">
+
 			<div class="videoBox">
+                <div class="rowVideos">
+                <div class="videoColumn">
 				<iframe width="420" height="315"
 					src="https://www.youtube.com/embed/DSehQsYU9h4">
-				</iframe> 
+				</iframe>
+                </div>
+                <div class="videoColumn">
 				<iframe width="420" height="315"
 					src="https://www.youtube.com/embed/13Kaw0mbCM0">
 				</iframe>
+                </div>
+                <div class="videoColumn">
 				<iframe width="420" height="315"
 					src="https://www.youtube.com/embed/HWsElfOqVLU">
 				</iframe>
+                </div>
+                </div>
 			</div>
-		</div>
+
 		
 
 </body>
@@ -170,10 +156,12 @@
 </script>
 
 <footer>
-	2018 © Rami Tammela    		
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>	
+    <div class="footerBox">
+        2018 © Rami Tammela
+        <br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
+        <br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
+        <br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
+    </div>
 </footer>
 
 </html>
