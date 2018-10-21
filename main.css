@@ -29,6 +29,10 @@ p {
     padding: 10px;
     text-align: center;
     margin: 50px 0px 50px 0px;
+
+    border-radius: 5px;
+    border: dotted;
+    border-color: red;
 }
 
 header 
@@ -36,6 +40,7 @@ header
     background: #999;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKQahY9MXADEdrVRanpocU3SHOpKc-swLK4YQyxA1YYiFRks5");
     margin: 0;
+    width:auto;
     padding: 15px 15px 0 15px;
 
     border-radius: 0px;
@@ -110,7 +115,7 @@ nav ul
 
 .rowVideos 
 {
-    margin: 20px;
+    margin:10px;
 }
     .rowVideos::after 
     {
@@ -123,7 +128,7 @@ nav ul
 {
     text-align:center;
 	color:white;
-	margin: 0 300px    0 300px;
+	margin: 0 300px 0 300px;
 	padding: 5px 5px 5px 5px;
 }
 		
@@ -188,15 +193,17 @@ nav ul
 
 .textBox 
 {
-    background: white;
+    background:white;
     color: black;
-    padding: 10px;
+    padding: 30px;
     text-align: left;
     margin: 0px 100px 0px 100px;
     margin-top: 50px;
+
     border-radius: 5px;
-    border: dotted;
-    border-color: red;
+    border-width: thick;
+    border:dotted;
+    border-color: black;
 }
 
     .textBox2
@@ -206,7 +213,10 @@ nav ul
 	    padding: 10px;
 	    text-align: left;
 	    margin-top: 50px;
-	
+
+	    border-radius: 5px;
+        border: dotted;
+        border-color: red;
     }
 
 	    .textBoxHeaderBox
@@ -224,16 +234,6 @@ nav ul
 			    text-align:left;
 		    }
 
-.col
-{
-	background: #666;
-	border-radius: 5px;
-	color: white;
-	padding: 10px .5%;
-	float: left;
-	margin: .5%;
-	width: 31%;
-}
 
 .hText	/* Biggest Header */
 {
@@ -252,13 +252,13 @@ nav ul
 {
 	font-size: 18px;
 	font-style: bold;
-	color:orange;
+	color:#ff5d00;
 }
 .bText	/* Smaller Header */
 {
-	font-size: 22px;
+	font-size: 25px;
 	font-style: bold;
-	color:orange;
+	color:#ff5d00;
 }
 
 
