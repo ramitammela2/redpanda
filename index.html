@@ -192,7 +192,7 @@
 	function showPosition(position)
 	{
 	    var latitudelongitude = position.coords.latitude + "," + position.coords.longitude;
-	    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitudelongitude + "&zoom=13&size=1000x500&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+	    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitudelongitude + "&zoom=13&size=600x400&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
 	    document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "'>";
 	}
 
@@ -232,7 +232,7 @@
 		
 		//Himalajas in google map
 	    var latitudelongitude = 28.6583142 + "," + 83.90242254;
-	    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitudelongitude + "&zoom=9&size=1000x500&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+	    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitudelongitude + "&zoom=9&size=600x400&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
 	    document.getElementById("pandamapholder").innerHTML = "<img src='" + img_url + "'>";
 	}
 
