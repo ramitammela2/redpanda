@@ -2,57 +2,108 @@
 <html>
 
 <head>
-	<title>Page #4</title>
-	<link rel="stylesheet" href="main.css">
+    <title>Red Panda</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" img href="redpanda.png">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Red Panda Info Site">
+    <meta name="keywords" content="Red Panda, Lesser Panda, Kultapanda">
+    <meta name="author" content="Rami Tammela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
-
-	
 <header>
-	<span class="hText">Red Panda</span>
-	<span class="h2Text">Ailurus fulgens</span><br><br>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="page2.html">History</a></li>
-			<li><a href="page3.html">Threats</a></li>
-			<li><a href="page4.html">Email</a></li>
-		</ul>
-	</nav>
+    <div class="headerBox">
+        <span class="hText">Red Panda</span>
+        <span class="h2Text">Ailurus fulgens</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">History</a></li>
+            <li><a href="page3.html">Threats</a></li>
+            <li><a href="page4.html">Email</a></li>
+        </ul>
+    </nav>
 </header>
 
 <body>
 
+    <div class="emptyTop"></div>
 
+    <p><strong><marquee scrolldelay="80"><q id="info"></q></marquee></strong></p>
 
-            <div class="textBox2">
-                <div class="EmailContainer">
-                    <form action="action_page.php">
+    <div class="textBox2">
+        <div class="EmailContainer">
+            <form action="action_page.php">
 
-                        <label for="fname"><span class="aText">First Name<span></label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="fname"><span class="aText">First Name<span></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                        <label for="lname"><span class="aText">Last Name<span></label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="lname"><span class="aText">Last Name<span></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                        <label for="subject"><span class="aText">Subject<span></label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="subject"><span class="aText">Subject<span></label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </form>
+        </div>
 
-                        <input type="submit" value="Submit">
+        <div class="rowButtons">
+            <button class="button" onclick="ButtonSubmit()">Submit</button>
+        </div>
+    </div>
 
-                    </form>
-                </div>
+    <div id="myDIV2">
+        <div class="textBox2">
+            <div class="rowButtons">
+                <span class="bText">Thank You!</span> <br>
+                <img src="redpanda.png" style="width:20%">
             </div>
+        </div>
+    </div>
+
+    <div class="emptyBottom"></div>
 
 </body>
 
 
+<script>
+    var infoText = [
+	"The red panda (Ailurus fulgens), also called the lesser panda, the red bear-cat, and the red cat-bear is a mammal native to the eastern Himalayas and southwestern China.", 
+	"The red panda has been classified as endangered by the IUCN, because its wild population is estimated at less than 10,000 mature individuals and continues to decline due to habitat loss and fragmentation, poaching, and inbreeding depression, although red pandas are protected by national laws in their range countries.", 
+	"The red panda is protected in all range countries, and hunting is illegal. Beyond this, conservation efforts are highly variable between countries ", 
+	"A red panda's average lifespan is between eight and 10 years, but individuals have been known to reach 15 years",
+	"Other English names used in the past include fire fox, fire cat, red cat, fox bear, bright panda, and Himalayan raccoon.",
+	"In Finnish, it is called kultapanda (gold panda).",
+	];
+	window.onload = function () 
+	{
+		var x = document.getElementById("info");
+		x.innerHTML = infoText[Math.floor (Math.random () * infoText.length)];
+	}
+
+
+    function ButtonSubmit()
+    {
+        var x = document.getElementById("myDIV2");
+        x.style.display = "block";
+    }
+</script>
+
+
 <footer>
-	2018 © Rami Tammela    		
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>
-	<br><a href="https://www.nationalgeographic.com/animals/mammals/r/red-panda/"> National Geographic</a>	
+    <div class="footerBox">
+        <br>
+        <span class="hText">2018 Rami Tammela</span>
+
+        <div class="rowButtons">
+            <button class="footerbutton" onClick="window.open('https://www.nationalgeographic.com/animals/mammals/r/red-panda/');">National Geographic</button>
+            <button class="footerbutton" onClick="window.open('https://en.wikipedia.org/wiki/Red_panda');">Wikipedia</button>
+            <button class="footerbutton" onClick="window.open('https://www.worldwildlife.org/species/red-panda');">WWF</button>
+            <br>
+        </div>
+    </div>
 </footer>
 
 </html>

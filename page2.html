@@ -6,6 +6,12 @@
     <title>Red Panda</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="https://orig00.deviantart.net/a6cd/f/2013/216/5/0/red_panda_by_hungaryoak-d6gnp1a.png">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Red Panda Info Site">
+    <meta name="keywords" content="Red Panda, Lesser Panda, Kultapanda">
+    <meta name="author" content="Rami Tammela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <header>
@@ -26,16 +32,115 @@
 
 <body>
 
-    <h1>My website</h1>
+    <div class="emptyTop"></div>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page3.html">page 3</a></li>
-    </ul>
+    <p><strong><marquee scrolldelay="80"><q id="info"></q></marquee></strong></p>
 
-    <h2>Page 2</h2>
-    <p>History</p>
+
+    <div class="titleBox">
+        <span class="hText">History</span>
+    </div>
+
+    <textarea rows="50" cols="50">
+Kingdom: Animalia
+    Phylum: Chordata
+        Class: Mammalia
+             Order: Carnivora
+                Suborder: Caniformia: "dog-like" carnivores
+                    Family: Ailuridae (Gray, 1843)
+                                  Species: Ailurus fulgens (Himalaya)
+                                  Species: Ailurus styani (China)
+                    Family: Canidae: coyotes, dogs, foxes, jackals, wolves
+                    Family: Mephitidae: skunks
+                    Family: Mustelidae: otters, martens, weasels, wolverines
+                    Family: Odobenidae: walruses
+                    Family: Otariidae: eared seals, sea lions
+                    Family: Phocidae: earless seals, true seals
+                    Family: Procyonidae: ringtails, coatis, raccoons
+                    Family: Ursidae: bears
+
+	Taxonomic History and Nomenclature:
+
+		There are 2 main groups of Carnivores: dog-like carnivores ("Caniformia") and cats. How the red panda fits within the dog group is undetermined.
+			Fossil evidence is scarce but suggests a close tie to the Procyonidae (raccoons).
+			Molecular studies support a relationship to Mustelidae (weasels) and Mephitidae (skunks).
+		2 distinct species are recognized by Colin Groves (2011); other taxonomists argue for 2 subspecies and the IUCN currently treats both as a single species – Ailurus fulgens
+			A. fulgens or A. fulgens fulgens: Himalayas and perhaps Zhangmu (southwestern Tibet)
+			A. styani or A. fulgens styani: Yunnan (China), Sichuan (China), Burma and perhaps eastern Tibet
+		Nomenclature: In 1821, Major-General Thomas Hardwicke described the red panda in a paper presented to the Linnaean Society*. Because his paper was not published until 6 years later, he is not credited as the describer.
+			"Panda" origin unclear. May derive from a local name, "nigalya ponya," which may have meant something like "bamboo footed” (Catton 1990).
+			The "Giant" panda was named 48 years later because of similarities to the Red panda
+			*In 1825, Cuvier published the description, choosing the name Ailurus fulgens meaning "shining" or "fire-colored" cat
+		Common names:
+			English: Red panda, Lesser panda, Red cat-bear, Fire fox, Fox bear, Himalayan raccoon
+			Burma: Kyaung-wun
+			China: Chu-chieh-liang, Xia xong mao
+			Central Nepal: Hobrey
+			French: Panda eclatant, Petit panda
+			Spanish: Panda chico, Panda rojo
+
+	Evolutionary History:
+
+		 Between 30 and 50 million years ago, ancestors of modern bears (ursids) split into 2 lineages (O'Brien 1985)
+			Within 10 million years of the split (possibly at the same time), the procyonid group split into Old World procyonids (lesser panda) and New World procyonids (raccoon, coati, olingo, and kinkajou)
+			The Giant panda diverged from other ursids 15-25 million years ago
+		Red pandas and Giant pandas ARE NOT related although they share a number of similiar characteristics (this is known as "convergent evolution")
+			Both are bamboo eaters with well-developed jaws, grinding molars, and similar digestive systems
+			Both have "false thumbs," which are also found in another fossil carnivore (Salesa 2011)
+			Both have similar reproductive organs
+			Red pandas are the only remaining member of the Ailuridae, while Giant pandas are bears (Ursidae)
+		The earliest "ailurids" probably originated in Europe during Late Oligocene-Early Miocene (25-18 million years ago)
+		First true Red pandas appear during the Miocene in Spain
+
+	Cultural History:
+
+		Earliest reference: 13th century Chou Dynasty scroll
+		Because habitat is largely inaccessible, and the species is extremely secretive, it has had relatively little economic or cultural impact
+		Red panda fur is considered good luck by some tribal people – Red panda fur hats are still worn in many regions, especially by bridegrooms
+		The sight of a Red panda when traveling on business is considered to be a good omen
+		In Central Bhutan, they are thought to be the reincarnation of Buddhist monks
+		Favorite pet of Indian Prime Minister Nehru
+</textarea>
+
+
+    <div class="buttonBox">
+        <div class="rowButtons">
+            <button class="button" onClick="window.open('http://library.sandiegozoo.org/factsheets/red_panda/red_panda.htm#taxonomy');">Source</button>
+        </div>
+    </div>
+
+    <div class="emptyBottom"></div>
 
 </body>
 
-</html>
+<footer>
+    <div class="footerBox">
+		<br>
+        <span class="hText">2018 Rami Tammela</span>
+		
+        <div class="rowButtons">
+			<button class="footerbutton" onClick="window.open('https://www.nationalgeographic.com/animals/mammals/r/red-panda/');">National Geographic</button>
+			<button class="footerbutton" onClick="window.open('https://en.wikipedia.org/wiki/Red_panda');">Wikipedia</button>
+			<button class="footerbutton" onClick="window.open('https://www.worldwildlife.org/species/red-panda');">WWF</button>
+			<br> 
+		</div>
+    </div>
+</footer>
+
+<script>
+    var infoText = [
+        "The red panda (Ailurus fulgens), also called the lesser panda, the red bear-cat, and the red cat-bear is a mammal native to the eastern Himalayas and southwestern China.",
+        "The red panda has been classified as endangered by the IUCN, because its wild population is estimated at less than 10,000 mature individuals and continues to decline due to habitat loss and fragmentation, poaching, and inbreeding depression, although red pandas are protected by national laws in their range countries.",
+        "The red panda is protected in all range countries, and hunting is illegal. Beyond this, conservation efforts are highly variable between countries ",
+        "A red panda's average lifespan is between eight and 10 years, but individuals have been known to reach 15 years",
+        "Other English names used in the past include fire fox, fire cat, red cat, fox bear, bright panda, and Himalayan raccoon.",
+        "In Finnish, it is called kultapanda (gold panda).",
+    ];
+    window.onload = function ()
+    {
+        var x = document.getElementById("info");
+        x.innerHTML = infoText[Math.floor(Math.random() * infoText.length)];
+    }
+</script>
+
+</html >

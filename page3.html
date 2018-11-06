@@ -1,23 +1,100 @@
 <!doctype html>
 <html>
 
-	<head>
-		<title>Page #3</title>
-		<link rel="stylesheet" href="main.css">
-	</head>
+<head>
+    <title>Red Panda</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://orig00.deviantart.net/a6cd/f/2013/216/5/0/red_panda_by_hungaryoak-d6gnp1a.png">
 
-	<body>
+    <meta charset="UTF-8">
+    <meta name="description" content="Red Panda Info Site">
+    <meta name="keywords" content="Red Panda, Lesser Panda, Kultapanda">
+    <meta name="author" content="Rami Tammela">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-		<h1>My website</h1>
+<header>
+    <div class="headerBox">
+        <span class="hText">Red Panda</span>
+        <span class="h2Text">Ailurus fulgens</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">History</a></li>
+            <li><a href="page3.html">Threats</a></li>
+            <li><a href="page4.html">Email</a></li>
+        </ul>
+    </nav>
+</header>
 
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="page2.html">page 2</a></li>
-		</ul>
 
-		<h2>Page 3</h2>
-		<p>Threats</p>
+<body>
 
-	</body>
+    <div class="emptyTop"></div>
+
+    <p><strong><marquee scrolldelay="80"><q id="info"></q></marquee></strong></p>
+
+    <div class="titleBox">
+        <span class="hText">Threats</span>
+    </div>
+
+    <textarea rows="50" cols="50">
+The primary threats to red pandas are direct harvest from the wild, live or dead, competition with domestic livestock resulting in habitat degradation, and deforestation resulting in habitat loss or fragmentation. The relative importance of these factors is different in each region, and is not well understood. For instance, in India, the biggest threat seems to be habitat loss followed by poaching, while in China, the biggest threat seems to be hunting and poaching. A 40% decrease in red panda populations has been reported in China over the last 50 years, and populations in western Himalayan areas are considered to be lower.
+        
+Deforestation can inhibit the spread of red pandas and exacerbate the natural population subdivision by topography and ecology, leading to severe fragmentation of the remaining wild population. Fewer than 40 animals in four separate groups share resources with humans in Nepal's Langtang National Park, where only 6% of 1,710 km2 (660 sq mi) is preferred red panda habitat. Although direct competition for food with domestic livestock is not significant, livestock can depress bamboo growth by trampling.
+        
+Small groups of animals with little opportunity for exchange between them face the risk of inbreeding, decreased genetic diversity, and even extinction. In addition, clearcutting for firewood or agriculture, including hillside terracing, removes old trees that provide maternal dens and decreases the ability of some species of bamboo to regenerate.
+        
+In south-west China, red pandas are hunted for their fur, especially for the highly valued bushy tails, from which hats are produced. In these areas, the fur is often used for local cultural ceremonies. In weddings, the bridegroom traditionally carries the hide. The "good-luck charm" red panda-tail hats are also used by local newly-weds. This practice may be quite old, as the red panda seems to be depicted in a 13th-century Chinese pen-and-ink scroll showing a hunting scene. Little or no mention of the red panda is made in the culture and folklore of Nepal.
+        
+In the past, red pandas were captured and sold to zoos. In an article appearing in the International Zoo News in 1969, one reported he personally had handled 350 red pandas in 17 years.
+        
+Due to CITES, this zoo harvest has decreased substantially in recent years, but poaching continues, and red pandas are often sold to private collectors at exorbitant prices. In some parts of Nepal and India, red pandas are kept as pets.
+        
+The red panda has a naturally low birth rate (usually one single or twin birth per year), and a high death rate in the wild
+</textarea>
+
+    <div class="buttonBox">
+        <div class="rowButtons">
+            <button class="button" onClick="window.open('https://en.wikipedia.org/wiki/Red_panda');">Source</button>
+        </div>
+    </div>
+
+    <div class="emptyBottom"></div>
+
+</body>
+
+
+<footer>
+    <div class="footerBox">
+        <br>
+        <span class="hText">2018 Rami Tammela</span>
+
+        <div class="rowButtons">
+            <button class="footerbutton" onClick="window.open('https://www.nationalgeographic.com/animals/mammals/r/red-panda/');">National Geographic</button>
+            <button class="footerbutton" onClick="window.open('https://en.wikipedia.org/wiki/Red_panda');">Wikipedia</button>
+            <button class="footerbutton" onClick="window.open('https://www.worldwildlife.org/species/red-panda');">WWF</button>
+            <br>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    var infoText = [
+        "The red panda (Ailurus fulgens), also called the lesser panda, the red bear-cat, and the red cat-bear is a mammal native to the eastern Himalayas and southwestern China.",
+        "The red panda has been classified as endangered by the IUCN, because its wild population is estimated at less than 10,000 mature individuals and continues to decline due to habitat loss and fragmentation, poaching, and inbreeding depression, although red pandas are protected by national laws in their range countries.",
+        "The red panda is protected in all range countries, and hunting is illegal. Beyond this, conservation efforts are highly variable between countries ",
+        "A red panda's average lifespan is between eight and 10 years, but individuals have been known to reach 15 years",
+        "Other English names used in the past include fire fox, fire cat, red cat, fox bear, bright panda, and Himalayan raccoon.",
+        "In Finnish, it is called kultapanda (gold panda).",
+    ];
+    window.onload = function ()
+    {
+        var x = document.getElementById("info");
+        x.innerHTML = infoText[Math.floor(Math.random() * infoText.length)];
+    }
+</script>
 
 </html>
