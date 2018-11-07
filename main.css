@@ -43,7 +43,13 @@ p
     border-color: red;
 }
 
-
+.empty 
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .emptyTop 
 {
     margin-top: 100px;
@@ -151,7 +157,16 @@ nav ul
 	margin: 0 300px 0 300px;
 	padding: 5px 5px 5px 5px;
 }
-		
+
+.rowDragAndDropBoxes 
+{
+
+    text-align: center;
+	margin:auto;
+	position:center;
+
+
+}		
 
 .button 
 {
@@ -304,7 +319,6 @@ nav ul
 			    text-align:left;
 		    }
 
-
 .hText	/* Biggest Header */
 {
 	font-size: 32px;
@@ -361,6 +375,10 @@ nav ul
     margin-right: auto;
     width: 50%;
 }
+#answer 
+{
+    display: none;
+}
 
 .maps
 {
@@ -368,6 +386,7 @@ nav ul
 	margin:auto;
 	position:center;
 	background:black;	
+	margin-top:50px;
 	margin-left:50px;
 	margin-right:50px;
 	padding-top:15px;
@@ -381,6 +400,13 @@ nav ul
     width: 33.33%;
     padding: 0px;
 }
+    .imgColumn:hover 
+    {
+        -moz-box-shadow: 0 0 10px #ff5d00;
+        -webkit-box-shadow: 0 0 10px #ff5d00;
+        box-shadow: 0 0 10px #ff5d00;
+    }
+
 
 .videoColumn 
 {
@@ -450,7 +476,96 @@ textarea
     resize: none;
 }
 
+/* Table*/
+table, th, td 
+{
+    border: 3px solid #870202;
+    border-collapse: collapse;
+}
+    th, td 
+    {
+        padding: 5px;
+        text-align: left;
+    }
 
+/* List*/
+li 
+{
+    font-size: 15px;
+}
+
+.dragAndDrop
+{
+    color:white;
+    font-size:18px;
+    text-align: center;
+
+    margin: auto;
+    position: center;
+    background: black;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.dragAndDrop2 
+{
+    color:white;
+    font-size:18px;
+    text-align: center;
+    margin: auto;
+    position: center;
+    background: black;
+  
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#dragAndDropBox1
+{
+    color:white;
+    font-size:18px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid orange;
+    background-image: url("A.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backround-position: center center;
+}
+#dragAndDropBox2 
+{
+    color: white;
+    font-size: 18px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid orange;
+    background-image: url("B.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backround-position: center center;
+}
+#dragAndDropBox3 
+{
+    color: white;
+    font-size: 18px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid orange;
+    background-image: url("C.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backround-position: center center;
+}
 footer
 {
 	text-align:center;
