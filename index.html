@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <header>
     <div class="headerBox">
         <span class="hText">   Red Panda</span>
@@ -28,12 +29,9 @@
     </nav>
 </header>
 
+
 <body>
     <p><strong><marquee scrolldelay="80"><q id="info"></q></marquee></strong></p>
-
-
-
-    
 
     <div class="rowImages">
         <br>
@@ -48,7 +46,6 @@
         </div>
         <br>
     </div>
-
 
     <div class="textBox2">
         <div class="textBox">
@@ -118,12 +115,13 @@
                 <br>
                 <span class="bText">Red Panda Sound</span> <br>
                 <br>
+
                 <audio controls>
                     <source src="redpandasound.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
-
             </div>
+
             <div id="myDIV2">
                 <span class="bText">DIET:</span> <br>Red pandas are excellent climbers, and forage largely in trees. They eat mostly bamboo, and may eat small mammals, birds, eggs, flowers, and berries. In captivity, they were observed to eat birds, flowers, maple and mulberry leaves, and bark and fruits of maple, beech, and mulberry.
                 <br><br>Like the giant panda, they cannot digest cellulose, so they must consume a large volume of bamboo to survive. Their diets consist of about two-thirds bamboo, but they also eat mushrooms, roots, acorns, lichens, and grasses. Occasionally, they supplement their diets with fish and insects. They do little more than eat and sleep due to their low-calorie diets.
@@ -193,6 +191,7 @@
 
 
     <div class="maps">
+        <h2>Maps</h2><br>
         <button class="button" onclick="getLocation()">Get Your Location</button><br>
         <div id="mapholder"></div>
 
@@ -201,11 +200,11 @@
         <div id="pandamapholder"></div>
     </div>
 
+
     <div class="dragAndDrop">
         <h2>Question</h2>
 
         <span class="hText">What is Red Panda in Finnish?</span>
-
 
         <ul>
             <div class="bText">A: Punapanda</div>
@@ -213,7 +212,6 @@
             <div class="bText">C: Kultapanda</div>
 
         </ul>
-
 
         <div class="dragAndDrop2">
             <div class="rowDragAndDropBoxes">
@@ -232,6 +230,7 @@
         <br>
         <div class="empty"></div>
         <br>
+
         <button class="button" onclick="ButtonAnswer()">Show answer</button>
 
         <div id="answer">
@@ -239,7 +238,6 @@
             <br><span class="bText">Answer is:</span>
             <br><span class="hText">B: Pikkupanda and C:  Kultapanda</span>
         </div>
-
     </div>
 
 
@@ -266,9 +264,7 @@
                 </div>
             </center>
         </div>
-
     </div>
-
 </body>
 
 
@@ -370,25 +366,6 @@
         document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "'>";
     }
 
-    function showError(error)
-    {
-        switch (error.code)
-        {
-            case error.PERMISSION_DENIED:
-                x.innerHTML = "User denied the request for Geolocation"
-                break;
-            case error.POSITION_UNAVAILABLE:
-                x.innerHTML = "Location information is unavailable"
-                break;
-            case error.TIMEOUT:
-                x.innerHTML = "The request to get user location timed out"
-                break;
-            case error.UNKNOWN_ERROR:
-                x.innerHTML = "An unknown error occurred"
-                break;
-        }
-    }
-
     function showPandaPosition(position)
     {
         var pandamap = document.getElementById("pandamapholder");
@@ -408,7 +385,8 @@
         document.getElementById("pandamapholder").innerHTML = "<img src='" + img_url + "'>";
     }
 
-    //Drag And Drop
+
+    /* Drag And Drop */
 
     function allowDrop(ev)
     {
